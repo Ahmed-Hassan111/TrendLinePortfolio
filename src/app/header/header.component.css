@@ -1,0 +1,147 @@
+/* Navbar Container */
+.custom-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  font-family: "Segoe UI", Arial, sans-serif;
+  /* position: relative; */
+  z-index: 1000;
+}
+/* Add padding-top to body or main content to prevent content being hidden under navbar */
+body,
+.main-content,
+router-outlet + * {
+  padding-top: 70px; /* Adjust to your navbar height */
+}
+/* Flex Layout */
+.navbar-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 32px;
+  position: relative;
+}
+
+/* Logo Section */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 38px;
+  margin-right: 12px;
+}
+
+.brand-main {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2152a2;
+  letter-spacing: 1px;
+}
+
+.brand-sub {
+  font-size: 2rem;
+  color: #1f5b90;
+  font-weight: 400;
+  margin-left: 2px;
+  opacity: 0.7;
+}
+
+/* Nav Links */
+.navbar-links {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: none;
+}
+
+.navbar-links a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.15rem;
+  font-weight: 400;
+  transition: color 0.2s;
+}
+
+.navbar-links a:hover {
+  color: #2152a2;
+}
+
+/* Hamburger Icon */
+.navbar-hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 6px;
+  margin-left: auto;
+}
+
+.navbar-hamburger span {
+  width: 32px;
+  height: 4px;
+  background: #2152a2;
+  display: block;
+  border-radius: 2px;
+}
+
+/* Close Icon */
+.navbar-close {
+  display: none;
+  font-size: 2.5rem;
+  color: #2152a2;
+  cursor: pointer;
+  position: absolute;
+  right: 32px;
+  top: 18px;
+  z-index: 1101;
+  font-weight: bold;
+  line-height: 1;
+}
+
+/* Responsive Overlay Menu */
+@media (max-width: 900px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 70px);
+    background: #f5f5f5;
+    padding: 40px 0 0 0;
+    z-index: 1100;
+    gap: 32px;
+    font-size: 2rem;
+    transition: all 0.3s;
+  }
+  .navbar-links.open {
+    display: flex;
+  }
+  .navbar-hamburger {
+    display: flex;
+  }
+  .navbar-close {
+    display: block;
+  }
+}
+
+/* Make links big in overlay */
+@media (max-width: 900px) {
+  .navbar-links li {
+    margin: 0 0 24px 40px;
+  }
+  .navbar-links a {
+    font-size: 2rem;
+    color: #333;
+  }
+}

@@ -1,0 +1,226 @@
+.home-hero-en {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 90vh;
+  background: #fff;
+  direction: ltr;
+  padding-top: 70px;
+}
+
+.home-hero-content {
+  max-width: 700px;
+  margin: 0 0 0 5vw;
+  text-align: left;
+}
+
+.home-hero-content h1 {
+  font-size: 3rem;
+  color: #23235c;
+  margin-bottom: 32px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.home-hero-content p {
+  font-size: 1.5rem;
+  color: #8887a1;
+  margin-bottom: 48px;
+  line-height: 2.2;
+}
+
+.home-hero-buttons {
+  display: flex;
+  gap: 24px;
+  justify-content: flex-start;
+}
+
+.btn {
+  font-size: 1.2rem;
+  padding: 12px 32px;
+  border-radius: 24px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background: #5c4dff;
+  color: #fff;
+}
+
+.btn-secondary {
+  background: #fff;
+  color: #5c4dff;
+  border: 2px solid #5c4dff;
+}
+/* English Services Section */
+.services-section-en {
+  margin: 80px 0 0 0;
+  padding: 0 5vw;
+  text-align: center;
+}
+
+.services-title-en {
+  font-size: 2.5rem;
+  color: #23235c;
+  margin-bottom: 48px;
+  font-weight: bold;
+}
+
+.services-list-en {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+
+.service-card-en {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  padding: 32px 24px;
+  max-width: 350px;
+  min-width: 280px;
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-card-en h3 {
+  color: #23235c;
+  font-size: 1.5rem;
+  margin-bottom: 18px;
+  font-weight: bold;
+}
+
+.service-card-en p {
+  color: #8887a1;
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+}
+
+.btn-secondary-en {
+  background: #ffb800;
+  color: #fff;
+  border: none;
+  padding: 10px 28px;
+  border-radius: 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.btn-secondary-en:hover {
+  background: #e6a700;
+}
+/* =========================
+   WHY CHOOSE US SECTION
+   ========================= */
+
+/* Section container */
+.why-choose-us-section {
+  margin: 80px 0 0 0;
+  padding: 0 5vw;
+  text-align: center;
+}
+
+/* Section title */
+.why-title {
+  font-size: 2.5rem;
+  color: #23235c;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+/* Section subtitle */
+.why-subtitle {
+  font-size: 1.3rem;
+  color: #8887a1;
+  margin-bottom: 48px;
+  font-weight: 400;
+}
+
+/* Cards container */
+.why-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+
+/* Individual card */
+.why-card {
+  background: #f7f8fc;
+  border-radius: 24px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  padding: 40px 24px 32px 24px;
+  max-width: 300px;
+  min-width: 220px;
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background 0.2s, color 0.2s;
+}
+
+/* Card hover effect: blue background and white text */
+.why-card:hover {
+  background: #6c47d8;
+  color: #fff;
+}
+
+.why-card:hover h4,
+.why-card:hover p,
+.why-card:hover .why-icon {
+  color: #fff;
+}
+
+/* Icon styling */
+.why-icon {
+  font-size: 2.5rem;
+  margin-bottom: 18px;
+  color: #23235c;
+  position: relative;
+  transition: color 0.2s;
+}
+
+/* SEO label inside icon */
+.seo-label {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  font-weight: bold;
+  color: #23235c;
+  background: #fff;
+  border-radius: 8px;
+  padding: 2px 8px;
+  margin-left: 8px;
+  transition: color 0.2s, background 0.2s;
+}
+
+/* Make SEO label readable on blue hover */
+.why-card:hover .seo-label {
+  background: #fff;
+  color: #6c47d8;
+}
+
+/* Card title */
+.why-card h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  transition: color 0.2s;
+}
+
+/* Card description */
+.why-card p {
+  font-size: 1rem;
+  color: #8887a1;
+  transition: color 0.2s;
+}
