@@ -1,5 +1,5 @@
 /* ==========================================================================
-   About Section Styles
+  About Section Styles
    ========================================================================== */
 
 .about-section {
@@ -11,9 +11,9 @@
 }
 
 .about-section h2 {
-  font-size: 32px;
+  font-size: 45px;
   margin-bottom: 20px;
-  color: #8b0000;
+  color: #00499F;
 }
 
 .story-content {
@@ -23,6 +23,7 @@
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
+  font-size: 30px;
 }
 
 .story-text {
@@ -51,7 +52,7 @@
 }
 
 /* ==========================================================================
-   Mission Section Styles
+  Mission Section Styles
    ========================================================================== */
 
 .mission-section {
@@ -64,7 +65,7 @@
 .mission-section h2 {
   font-size: 32px;
   margin-bottom: 20px;
-  color: #8b0000;
+  color: #00499F;
 }
 
 .mission-cards {

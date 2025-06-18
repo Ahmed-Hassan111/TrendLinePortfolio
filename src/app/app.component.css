@@ -12,6 +12,7 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
+  cursor: pointer;
 }
 
 /* ثبات ارتفاع الصفحة في حال المحتوى قليل */
