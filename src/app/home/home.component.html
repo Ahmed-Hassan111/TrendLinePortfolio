@@ -2,63 +2,106 @@
     Main Section
     ========================= -->
 <section class="main">
-
-
-<!-- =========================
-    Main Hero Section
-    ========================= -->
-<section class="hero-section">
-  <!-- Text Content (Left) -->
-  <div class="hero-text">
-    <h1>Experts in the Field<br />of Digital Marketing</h1>
-    <p>
-      Digital marketing covers many areas such as social media, websites,
-      print and online advertising, TV, radio, and even exhibitions.<br />
-      <strong>"TrendLine"</strong>
-    </p>
-    <div class="hero-buttons">
-      <button class="btn btn-primary">Contact Us</button>
-      <button class="btn btn-outline-primary">Request a Quote</button>
+  <section class="hero-section">
+    <!-- Text Content (Left) -->
+    <div class="hero-text">
+      <h1>Experts in the Field<br />of Digital Marketing</h1>
+      <p>
+        Digital marketing covers many areas such as social media, websites,
+        print and online advertising, TV, radio, and even exhibitions.<br />
+        <strong>"TrendLine"</strong>
+      </p>
+      <div class="hero-buttons">
+        <button class="btn btn-primary" routerLink="/contact">
+          Contact Us
+        </button>
+        <!-- <a
+          href="https://wa.me/2001022624475?text=Hi%2C%20I%20would%20like%20to%20request%20a%20quote."
+          target="_blank"
+        > -->
+        <button
+          class="btn btn-outline-primary"
+          onclick="window.open('https://wa.me/2001022624475?text=Hi%2C%20I%20would%20like%20to%20request%20a%20quote.','_blank')"
+        >
+          Request a Quote
+        </button>
+        <!-- </a> -->
+      </div>
     </div>
-  </div>
 
-  <!-- Image (Right) -->
-  <div class="hero-image">
-    <img src="assets/images/logo.gif" alt="Digital Marketing Graphic" />
-  </div>
-</section>
+    <!-- Image (Right) -->
+    <!-- <div class="hero-image">
+      <img src="assets/images/logo.gif" alt="Digital Marketing Graphic" />
+    </div> -->
+    <div class="hero-image">
+      <!--link whatsapp-->
+      <a
+        href="https://www.linkedin.com/company/paymobcompany/ "
+        target="_blank"
+        rel="noopener noreferrer"
+        ><button class="phone">
+          <img
+            src="../assets/images/Mobile social column(2).png"
+            alt="Digital Marketing Graphic"
+          /></button
+      ></a>
+    </div>
+    <!-- </section> -->
+    <!-- closin main section -->
+    <button class="scroll-arrow" (click)="scrollArrowAction()">
+      <i [ngClass]="arrowUp ? 'fa fa-arrow-up' : 'fa fa-arrow-down'"></i>
+    </button>
+  </section>
   <!-- =========================
     Our Main Services Section
     ========================= -->
   <!-- Services Section -->
-<section class="services-section-en">
-  <!-- Section Title -->
-  <h2 class="services-title-en">Our Main Services</h2>
+  <section class="services-section-en">
+    <!-- Section Title -->
+    <h2 class="services-title-en">Our Main Services</h2>
 
-  <!-- Services Grid -->
-  <div class="services-list-en">
-    <!-- Single Card -->
-    <div class="service-card-en">
-      <a href="/services" class="card-img-link">
-        <img src="assets/images/service1.jpg" alt="Service 1" class="card-img" loading="lazy" />
-      </a>
+    <!-- Services Grid -->
+    <div class="services-list-en">
+      <!-- Single Card -->
+      <div class="service-card-en">
+        <h3 class="card-title">Social Media Management</h3>
+        <a href="/services" class="card-img-link">
+          <img
+            src="assets/images/service1.jpg"
+            alt="Service 1"
+            class="card-img"
+            loading="eager"
+          />
+        </a>
+      </div>
+
+      <div class="service-card-en">
+        <h3 class="card-title">Web Development</h3>
+        <a href="/services" class="card-img-link">
+          <img
+            src="assets/images/service2.jpg"
+            alt="Service 2"
+            class="card-img"
+            loading="eager"
+          />
+        </a>
+      </div>
+
+      <div class="service-card-en">
+        <h3 class="card-title">Digital Marketing</h3>
+        <a href="/services" class="card-img-link">
+          <img
+            src="assets/images/service3.jpg"
+            alt="Service 3"
+            class="card-img"
+            loading="eager"
+          />
+        </a>
+      </div>
+
+      <!-- Add more service cards by duplicating one block -->
     </div>
-
-    <div class="service-card-en">
-      <a href="/services" class="card-img-link">
-        <img src="assets/images/service2.jpg" alt="Service 2" class="card-img" loading="lazy"/>
-      </a>
-    </div>
-
-    <div class="service-card-en">
-      <a href="/services" class="card-img-link">
-        <img src="assets/images/service3.jpg" alt="Service 3" class="card-img" loading="lazy"/>
-      </a>
-    </div>
-
-    <!-- Add more service cards by duplicating one block -->
-  </div>
-</section>
+  </section>
 
   <!-- =========================
      WHY CHOOSE US SECTION
@@ -101,7 +144,7 @@
         </p>
       </div>
       <!-- Card 4: SEO Experts -->
-      <div class="why-card">
+      <!-- <div class="why-card">
         <div class="why-icon">
           <i class="fa fa-search"></i><span class="seo-label"></span>
         </div>
@@ -110,7 +153,7 @@
           Improving search engine ranking so you appear repeatedly to your
           target customer.
         </p>
-      </div>
+      </div> -->
     </div>
   </section>
 
@@ -251,7 +294,5 @@
     </div>
   </section>
 
-
-
-<!-- closin main section -->
-  </section>
+  <!-- closin main section -->
+</section>

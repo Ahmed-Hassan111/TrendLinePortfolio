@@ -1,6 +1,6 @@
 /* Main Section */
-.main{
-   background: linear-gradient(to top, #9793b2, #c7c6d4, #ffffff);
+.main {
+  background: linear-gradient(to top, #9793b2, #c7c6d4, #ffffff);
 }
 /* fisrt Main Section */
 .hero-section {
@@ -30,7 +30,7 @@
 
 .hero-text p {
   font-size: 1.4rem;
-  color: #dedde5;
+  color: #2152a2;
   margin-bottom: 32px;
   line-height: 2;
 }
@@ -50,10 +50,24 @@
 }
 
 .hero-image img {
-  max-width: 100%;
+  max-width: 40%;
   height: auto;
-  /* border-radius: 16px; */
-  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); */
+  margin-top: 25px;
+  margin-left: 80px;
+  transform: rotate3d(1, 0.3, 0, 15deg);
+  transform-style: preserve-3d;
+  transition: transform 0.2s ease-out;
+}
+.hero-image img:hover {
+  transform: rotate3d(1, 0.3, 0, 20deg);
+}
+.phone {
+  border-style: none;
+  list-style-image: none;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  outline: none;
 }
 
 /* Buttons Styling */
@@ -79,13 +93,14 @@
 }
 
 /* Responsive: Stack on smaller screens */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .hero-section {
     flex-direction: column;
     text-align: center;
   }
 
-  .hero-text, .hero-image {
+  .hero-text,
+  .hero-image {
     flex: 1 1 100%;
     max-width: 100%;
   }
@@ -101,70 +116,29 @@
   .hero-buttons {
     justify-content: center;
   }
-}
-/* English Services Section */
-/* -------------------------------------------------------*/
-/* .services-section-en {
-  margin: 80px 0 0 0;
-  padding: 0 5vw;
-  text-align: center;
-}
-
-.services-title-en {
-  font-size: 2.5rem;
-  color: #23235c;
-  margin-bottom: 48px;
-  font-weight: bold;
-}
-
-.services-list-en {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 32px;
-  justify-content: center;
-}
-
-.service-card-en {
-  background: #fff;
-  border-radius: 18px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
-  padding: 32px 24px;
-  max-width: 350px;
-  min-width: 280px;
-  flex: 1 1 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.service-card-en h3 {
-  color: #23235c;
-  font-size: 1.5rem;
-  margin-bottom: 18px;
-  font-weight: bold;
-}
-
-.service-card-en p {
-  color: #8887a1;
-  font-size: 1.1rem;
-  margin-bottom: 24px;
-}
-
-.btn-secondary-en {
-  background: #ffb800;
-  color: #fff;
+} */
+.scroll-arrow {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 48px;
+  height: 48px;
   border: none;
-  padding: 10px 28px;
-  border-radius: 24px;
-  font-size: 1rem;
+  border-radius: 50%;
+  background: #2ec4b6;
+  color: #fff;
+  font-size: 1.7rem;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.12);
   cursor: pointer;
-  font-weight: 500;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: background 0.2s;
 }
-
-.btn-secondary-en:hover {
-  background: #e6a700;
-} */
+.scroll-arrow:hover {
+  background: #1fa89a;
+}
 /* =========================
    Our Main Services Section
    ========================= */
@@ -227,6 +201,12 @@
   animation: cardFadeIn 1s ease forwards;
   transform: translateY(50px);
   opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0 0; /* إضافة مسافة أعلى للعنوان */
+  /* min-height: 300px; */
+  height: 500px; /* ارتفاع أدنى لضمان ملء الصورة */
 }
 
 /* Card animation on load */
@@ -237,19 +217,31 @@
   }
 }
 
+/* Title over the card */
+.card-title {
+  font-size: 1.5rem;
+  color: #23235c;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+  padding: 0 10px;
+}
+
 /* Container for the image with hover effect */
 .card-img-link {
   display: block;
   width: 100%;
-  height: 100%;
+  flex-grow: 1; /* لجعل الرابط يمتد ليشمل المساحة المتاحة */
   overflow: hidden;
+  position: relative;
 }
 
 /* Image inside the card */
 .card-img {
   width: 100%;
-  height: 220px;
-  object-fit: cover;
+  height: 100%; /* لجعل الصورة تملأ المساحة المتاحة */
+  object-fit: cover; /* للحفاظ على النسبة مع ملء المساحة */
   display: block;
   transition: transform 0.4s ease-in-out;
 }

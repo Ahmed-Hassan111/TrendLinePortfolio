@@ -1,11 +1,31 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, HostListener } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
+  standalone: true,
+  imports: [CommonModule, RouterLink],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements AfterViewInit {
+  arrowUp = false;
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    // إذا كنت في الأسفل أظهر سهم للأعلى، إذا كنت في الأعلى أظهر سهم للأسفل
+    this.arrowUp = window.pageYOffset > 100;
+  }
+
+  scrollArrowAction() {
+    if (this.arrowUp) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }
+  }
+
   ngAfterViewInit(): void {
     const tabs = document.querySelectorAll('.tab');
     const cards = document.querySelectorAll('.package-card');

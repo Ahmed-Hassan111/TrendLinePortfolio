@@ -21,3 +21,26 @@
     </ul>
   </div>
 </nav>
+<nav class="custom-navbar">
+  <div class="navbar-content">
+    <div class="navbar-logo">
+      <span class="brand-main">Trend</span><span class="brand-sub">Line</span>
+    </div>
+    <div class="navbar-hamburger" *ngIf="!menuOpen" (click)="menuOpen = true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="navbar-close" *ngIf="menuOpen" (click)="menuOpen = false">
+      &times;
+    </div>
+    <ul class="navbar-links" [class.open]="menuOpen">
+      <li><a routerLink="/" (click)="menuOpen = false">Home</a></li>
+      <li><a routerLink="/about" (click)="menuOpen = false">About</a></li>
+      <li><a routerLink="/services" (click)="menuOpen = false">Services</a></li>
+      <li>
+        <a routerLink="/contact" (click)="menuOpen = false">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>

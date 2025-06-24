@@ -38,12 +38,13 @@ router-outlet + * {
   align-items: center;
   justify-content: space-between;
   height: 70px;
-  padding: 0 32px;
+  /* padding: 0 32px; */
   position: relative;
 }
 
 /* Logo Section */
 .navbar-logo {
+  padding-left: 15px;
   display: flex;
   align-items: center;
 }
