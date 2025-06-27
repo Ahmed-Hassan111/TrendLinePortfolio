@@ -1,0 +1,19 @@
+{
+  "Header": {
+    "Logo-main": "تريند",
+    "Logo-sub": "لاين",
+    "Home": "الرئيسية",
+    "About": "من نحن",
+    "ContactUs": "تواصل معنا",
+    "Services": "خدماتنا"
+  },
+  "Contact": {
+    "Title": "تواصل معنا",
+    "Phone": "الهاتف",
+    "PhoneValue": "01022624475",
+    "Email": "البريد الإلكتروني",
+    "EmailValue": "name@gmail.com",
+    "Address": "العنوان",
+    "Country": " عمان، مسقط"
+  }
+}

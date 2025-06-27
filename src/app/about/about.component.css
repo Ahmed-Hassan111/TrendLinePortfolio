@@ -1,8 +1,121 @@
 /* ==========================================================================
   About Section Styles
    ========================================================================== */
+/* === Car Hero Section Styles === */
+.about-hero-section {
+  background: #1c2236;
+  position: relative;
+  min-height: 480px;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
 
-.about-section {
+.about-hero-content {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 480px;
+  padding-bottom: 0;
+}
+
+.about-hero-text {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px 0 20px;
+  color: #fff;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.about-hero-text p {
+  margin-top: 60px;
+  /* margin-bottom: 1em; */
+  font-size: 1rem;
+}
+.about-hero-text-second {
+  margin-bottom: 1.6em;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.about-hero-car {
+  width: 600px;
+  max-width: 90vw;
+  display: block;
+  margin: 40px auto 0 auto;
+  z-index: 2;
+}
+
+.about-hero-bottom-row {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  padding: 0 60px;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  z-index: 3;
+}
+
+.about-hero-detail {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+/* .about-hero-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+} */
+
+/* .about-hero-brand .brand-main {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2152a2;
+  letter-spacing: 2px;
+}
+
+.about-hero-brand .brand-sub {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #7ea1c7;
+  letter-spacing: 2px;
+} */
+
+@media (max-width: 900px) {
+  .about-hero-text {
+    font-size: 1.2rem;
+    max-width: 95vw;
+    padding-top: 30px;
+  }
+  .about-hero-car {
+    width: 90vw;
+    margin-top: 20px;
+  }
+  .about-hero-bottom-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 0 20px;
+    font-size: 1rem;
+  }
+}
+/* .about-section {
   padding: 40px 20px;
   padding-top: 70px;
   text-align: center;
@@ -13,7 +126,7 @@
 .about-section h2 {
   font-size: 45px;
   margin-bottom: 20px;
-  color: #00499F;
+  color: #00499f;
 }
 
 .story-content {
@@ -49,7 +162,7 @@
   max-width: 600px;
   margin-top: 20px;
   border-radius: 10px;
-}
+} */
 
 /* ==========================================================================
   Mission Section Styles
@@ -58,14 +171,14 @@
 .mission-section {
   padding: 40px 20px;
   text-align: center;
-  background-color: #c4c6d0;
+  background-color: #ffffff;
   margin-bottom: 0;
 }
 
 .mission-section h2 {
   font-size: 32px;
   margin-bottom: 20px;
-  color: #00499F;
+  color: #00499f;
 }
 
 .mission-cards {
@@ -83,7 +196,11 @@
   max-width: 300px;
   text-align: center;
 }
-
+/* Add this for the wide single card */
+.mission-card-wide {
+  max-width: 600px;
+  width: 100%;
+}
 .mission-icon {
   font-size: 24px;
   color: #2d6bb1;
@@ -99,4 +216,5 @@
 .mission-card p {
   font-size: 14px;
   color: #666;
+  margin-bottom: 10px;
 }

@@ -48,7 +48,24 @@ router-outlet + * {
   display: flex;
   align-items: center;
 }
+html[dir="rtl"] .navbar-logo {
+  flex-direction: row-reverse;
+}
+.lang-switch button {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  padding: 2px 8px;
+  cursor: pointer;
+  margin: 0 2px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
 
+.lang-switch button:hover,
+.lang-switch button:focus {
+  background: #f0f0f0;
+}
 .navbar-logo img {
   height: 38px;
   margin-right: 12px;

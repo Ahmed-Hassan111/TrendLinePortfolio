@@ -1,0 +1,19 @@
+{
+  "Header": {
+    "Logo-main": "Trend",
+    "Logo-sub": "Line",
+    "Home": "Home",
+    "About": "About",
+    "ContactUs": "ContactUs",
+    "Services": "Services"
+  },
+  "Contact": {
+    "Title": "Contact Us",
+    "Phone": "Phone",
+    "PhoneValue": "01022624475",
+    "Email": "Email",
+    "EmailValue": "name@gmail.com",
+    "Address": "Address",
+    "Country": "Omman, Muscat"
+  }
+}
