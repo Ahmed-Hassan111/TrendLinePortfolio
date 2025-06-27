@@ -20,6 +20,26 @@
     "Title": "About Us",
     "Description1": " We are a company specializing in social media account management. We offer integrated solutions that help brands appear professional, attractive, and effective. ",
     "Description2": " Our goal is to be the primary creative partner for your success in the digital world. ",
-    "Description3": " Digital excellence starts with the details "
+    "Description3": " Digital excellence starts with the details ",
+    "OurVision": "OurVision",
+    "OurVisionDesc1" : "To be the pioneers in providing content management services.",
+    "OurVisionDesc2": "Digitally, with high professionalism and renewed creativity, we make a difference.",
+    "OurVisionDesc3" : "Tangible in the presence of our digital customers."
+  },
+  "Services": {
+    "Title": "Our Services",
+    "Service1": "Account Management",
+    "Service1Desc": "Comprehensive management of social media accounts, including content, publishing, engagement, and daily monitoring with periodic performance reports.",
+    "Service2": "Content & Design",
+    "Service2Desc": "Writing attractive content aligned with brand identity, designing professional posts and stories, and organizing bio and highlights.",
+    "Service3": "Photography & Editing",
+    "Service3Desc": "Professional photography for products, people, and locations, including aerial (drone) shots and creative short video editing.",
+    "Service4": "Strategy & Analysis",
+    "Service4Desc": "Building growth plans based on market and audience analysis to increase engagement, reach, and achieve digital goals.",
+    "Service5": "Advertising Campaigns",
+    "Service5Desc": "Preparing and executing targeted paid campaigns with precise analysis and continuous optimization to achieve the best ROI.",
+    "Service6": "App & Web Development",
+    "Service6Desc": "Custom development of responsive websites and mobile applications tailored to your business needs, secure coding."
   }
+
 }

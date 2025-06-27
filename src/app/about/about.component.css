@@ -54,7 +54,7 @@
   margin: 40px auto 0 auto;
   z-index: 2;
 }
-/* 
+/*
 .about-hero-bottom-row {
   width: 100%;
   max-width: 1200px;
@@ -161,52 +161,89 @@
    ========================================================================== */
 
 .mission-section {
-  padding: 40px 20px;
-  text-align: center;
-  background-color: #ffffff;
-  margin-bottom: 0;
-}
-
-.mission-section h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-  color: #00499f;
-}
-
-.mission-cards {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.mission-card {
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  max-width: 300px;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
   text-align: center;
 }
-/* Add this for the wide single card */
-.mission-card-wide {
-  max-width: 600px;
-  width: 100%;
-}
-.mission-icon {
-  font-size: 24px;
-  color: #2d6bb1;
-  margin-bottom: 10px;
+.mission-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #1c2236;
 }
 
-.mission-card h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: #333;
+
+/* From Uiverse.io by dylanharriscameron */
+.card {
+  position: relative;
+  width: 500px;
+  height: 250px;
+  border-radius: 14px;
+  z-index: 1111;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  ;
 }
 
-.mission-card p {
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 10px;
+.bg {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 490px;
+  height: 240px;
+  z-index: 2;
+  background: rgba(255, 255, 255, .95);
+  backdrop-filter: blur(24px);
+  border-radius: 10px;
+  overflow: hidden;
+  outline: 2px solid white;
+  padding-top: 50px;
 }
+.bg p{
+  font-size: medium;
+}
+
+.blob {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #3a2786;
+  opacity: 1;
+  filter: blur(12px);
+  animation: blob-bounce 5s infinite ease;
+}
+
+@keyframes blob-bounce {
+  0% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+
+  25% {
+    transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+  }
+
+  50% {
+    transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+  }
+
+  75% {
+    transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+  }
+
+  100% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+}
+
