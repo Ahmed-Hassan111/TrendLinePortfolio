@@ -15,5 +15,11 @@
     "EmailValue": "name@gmail.com",
     "Address": "Address",
     "Country": "Omman, Muscat"
+  },
+  "About": {
+    "Title": "About Us",
+    "Description1": " We are a company specializing in social media account management. We offer integrated solutions that help brands appear professional, attractive, and effective. ",
+    "Description2": " Our goal is to be the primary creative partner for your success in the digital world. ",
+    "Description3": " Digital excellence starts with the details "
   }
 }
