@@ -40,6 +40,12 @@
     "Service5Desc": "Preparing and executing targeted paid campaigns with precise analysis and continuous optimization to achieve the best ROI.",
     "Service6": "App & Web Development",
     "Service6Desc": "Custom development of responsive websites and mobile applications tailored to your business needs, secure coding."
+  },
+  "Footer": {
+    "Title1": "Contact Numbers",
+    "Title2": "Address",
+    "Title3": "Follow Us",
+    "Title4": "Copyright"
   }
 
 }

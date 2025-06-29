@@ -583,7 +583,14 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 992px) {
+@media (min-width: 992px) and (max-width: 1280px) {
+  .hero-image img {
+    max-width: 55%;
+    margin: 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
   .pricing-container {
     flex-direction: column;
   }
@@ -595,13 +602,29 @@ body {
   .pricing-intro {
     text-align: center;
   }
+  .hero-section{
+    justify-content: space-between;
+  }
 
   .features-highlight {
     justify-content: center;
   }
+  .hero-section {
+    flex-wrap: nowrap;      /* يمنع نزول الصورة تحت النص */
+    gap: 20px;              /* تقليل المسافة بين النص والصورة */
+  }
+  .hero-text, .hero-image {
+    flex: 1 1 50%;          /* كل عنصر يأخذ نصف العرض */
+    max-width: 50%;
+  }
+  .hero-image img {
+    max-width: 70%;         /* كبر الصورة أكثر */
+    margin: 0;
+    /* transform: none; */
+  }
 }
 
-@media (max-width: 576px) {
+@media (min-width: 480px) and (max-width: 576px) {
   .pricing-intro h2 {
     font-size: 2rem;
   }
@@ -613,4 +636,27 @@ body {
   .package-card {
     padding: 20px;
   }
+    .hero-image {
+    max-width: 100%;
+    margin: 0;
+    justify-content: center;
+  }
+  .hero-image img {
+    max-width: 65vw; /* اجعلها أكبر من السابق */
+    margin: 0;
+
+  }
 }
+@media (max-width: 480px) {
+  .hero-image {
+    max-width: 100%;
+    margin: 0;
+    justify-content: center;
+  }
+  .hero-image img {
+    max-width: 65vw; /* اجعلها أكبر من السابق */
+    margin: 0;
+
+  }
+}
+

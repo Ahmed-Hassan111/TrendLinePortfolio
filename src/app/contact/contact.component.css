@@ -275,9 +275,12 @@
   }
   .contact-hero-img {
     width: 100%;
+    height: 100px;
+
   }
   .contact-hero-content {
     width: 100%;
+    margin-top: 50px;
   }
   .contact-info-list {
     padding-top: 30px;
