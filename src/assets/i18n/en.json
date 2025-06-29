@@ -44,8 +44,11 @@
   "Footer": {
     "Title1": "Contact Numbers",
     "Title2": "Address",
-    "Title3": "Follow Us",
-    "Title4": "Copyright"
+    "Title3": "Emails",
+    "SubTitle": "TrendLine All rights reserved 2025",
+    "SubTitleContact": "Contact Us",
+    "SubTitleServices": "Our Services",
+    "SubTitleAbout": "About Us"
   }
 
 }

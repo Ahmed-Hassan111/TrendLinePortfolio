@@ -1,7 +1,10 @@
 <footer class="main-footer-ar">
   <div class="footer-top">
     <div class="footer-col about">
-      <p>ttttttttttttttttttttttttttttttt</p>
+      <p>{{ "Footer.Title3" | translate }}</p>
+              <a href="mailto:info@ofxegypt.com" class="footer-mail"
+          >mail <i class="fa fa-envelope-o"></i
+        ></a>
     </div>
     <div class="footer-col address">
       <div class="footer-title">{{ "Footer.Title2" | translate }}</div>
@@ -17,9 +20,7 @@
       <div>+(20) 1070750221</div>
       <div>+(20) 1070750226</div>
       <div>
-        <a href="mailto:info@ofxegypt.com" class="footer-mail"
-          >mail <i class="fa fa-envelope-o"></i
-        ></a>
+
       </div>
     </div>
     <!-- <div class="footer-col payment">
@@ -35,14 +36,14 @@
       <a href="#"><i class="fab fa-facebook-f"></i></a>
     </div>
     <div class="footer-links">
-      <a routerLink="contact">Contact Us</a>
+      <a routerLink="contact">{{ "Footer.SubTitleContact" | translate }}</a>
       <span>|</span>
-      <a routerLink="services">Services</a>
+      <a routerLink="services">{{ "Footer.SubTitleServices" | translate }}</a>
       <span>|</span>
-      <a routerLink="about">About Us</a>
+      <a routerLink="about">{{ "Footer.SubTitleAbout" | translate }}</a>
     </div>
     <div class="footer-copy">
-      <p>&copy; 2025 TrendLine. All rights reserved</p>
+      <p>&copy; {{ "Footer.SubTitle" | translate }}</p>
     </div>
   </div>
 </footer>

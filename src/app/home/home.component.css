@@ -18,7 +18,7 @@
 .hero-text {
   flex: 1 1 50%;
   max-width: 600px;
-  color: #4627a1;
+  color: #1B0273;
 }
 
 .hero-text h1 {
@@ -27,6 +27,7 @@
   font-weight: bold;
   line-height: 1.2;
 }
+
 
 .hero-text p {
   font-size: 1.4rem;
@@ -82,14 +83,20 @@
 }
 
 .btn-primary {
-  background: #5c4dff;
+  background: #1B0273;
   color: #fff;
 }
-
+.btn-primary:hover {
+  background: #6F04D9;
+}
 .btn-outline-primary {
   background: #fff;
-  color: #5c4dff;
-  border: 2px solid #5c4dff;
+  color: #1B0273;
+  border: 2px solid #6F04D9;
+}
+.btn-outline-primary:hover {
+  background: #6F04D9;
+  color: #fff;
 }
 
 /* Responsive: Stack on smaller screens */
@@ -125,7 +132,7 @@
   height: 48px;
   border: none;
   border-radius: 50%;
-  background: #2ec4b6;
+  background: #6F04D9;
   color: #fff;
   font-size: 1.7rem;
   box-shadow: 0 2px 8px rgba(44, 62, 80, 0.12);
@@ -137,7 +144,7 @@
   transition: background 0.2s;
 }
 .scroll-arrow:hover {
-  background: #1fa89a;
+  background: #9049d8;
 }
 /* =========================
    Our Main Services Section
@@ -166,7 +173,7 @@
 /* Section heading styles */
 .services-title-en {
   font-size: 2.8rem;
-  color: #23235c;
+  color: #1B0273;
   margin-bottom: 48px;
   font-weight: 800;
   position: relative;
@@ -220,7 +227,7 @@
 /* Title over the card */
 .card-title {
   font-size: 1.5rem;
-  color: #23235c;
+  color: #1B0273;
   font-weight: 700;
   margin-bottom: 10px;
   text-align: center;
@@ -265,7 +272,7 @@
 /* Section title */
 .why-title {
   font-size: 2.5rem;
-  color: #23235c;
+  color: #1B0273;
   font-weight: bold;
   margin-bottom: 16px;
 }
@@ -303,7 +310,7 @@
 
 /* Card hover effect: blue background and white text */
 .why-card:hover {
-  background: #6c47d8;
+  background: #6F04D9;
   color: #fff;
 }
 
@@ -317,7 +324,7 @@
 .why-icon {
   font-size: 2.5rem;
   margin-bottom: 18px;
-  color: #23235c;
+  color: #6F04D9;
   position: relative;
   transition: color 0.2s;
 }
@@ -330,7 +337,7 @@
   transform: translate(-50%, -50%);
   font-size: 1rem;
   font-weight: bold;
-  color: #23235c;
+  color: #6F04D9;
   background: #fff;
   border-radius: 8px;
   padding: 2px 8px;
@@ -341,7 +348,7 @@
 /* Make SEO label readable on blue hover */
 .why-card:hover .seo-label {
   background: #fff;
-  color: #6c47d8;
+  color: #6F04D9;
 }
 
 /* Card title */
@@ -397,7 +404,7 @@ body {
 }
 
 .pricing-intro h2 span {
-  color: #6e45e2;
+  color: #6F04D9;
 }
 
 .tagline {
@@ -407,7 +414,7 @@ body {
 }
 
 .tagline span {
-  color: #ff6b6b;
+  color: #6F04D9;
   font-weight: 600;
   font-size: 1.9rem;
 }
@@ -435,7 +442,7 @@ body {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 .feature-icon {
-  color: #6c5ce7;
+  color: #6F04D9;
   font-size: 1.1rem;
 }
 
@@ -469,7 +476,7 @@ body {
 }
 
 .tab.active {
-  background: #6c5ce7;
+  background: #6F04D9;
   color: #fff;
 }
 
@@ -507,7 +514,7 @@ body {
 .card-header h3 {
   font-size: 1.5rem;
   margin: 0;
-  color: #2a2a72;
+  color: #1B0273;
 }
 
 .price-badge {
@@ -550,7 +557,7 @@ body {
   padding: 15px;
   border: none;
   border-radius: 50px;
-  background: #6c5ce7;
+  background: #6F04D9;
   color: #fff;
   font-weight: 600;
   font-size: 1rem;
