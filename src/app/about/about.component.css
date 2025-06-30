@@ -54,40 +54,6 @@
   margin: 40px auto 0 auto;
   z-index: 2;
 }
-/*
-.about-hero-bottom-row {
-  width: 100%;
-  max-width: 1200px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
-  left: 0;
-  bottom: 30px;
-  padding: 0 60px;
-  box-sizing: border-box;
-  font-size: 1.5rem;
-  z-index: 3;
-}
-
-.about-hero-detail {
-  color: #fff;
-  font-size: 1.3rem;
-  font-weight: 400;
-  opacity: 0.9;
-  text-align: right;
-} */
-
-/* When Arabic is active and <html dir="rtl"> */
-/* html[dir="rtl"] .about-hero-detail {
-  text-align: right;
-} */
-/* .ltr-align {
-  text-align: left;
-}
-.rtl-align {
-  text-align: right;
-} */
 
 @media (max-width: 900px) {
   .about-hero-text {
@@ -107,14 +73,6 @@
     font-size: 1rem;
   }
 }
-/* .about-section {
-  padding: 40px 20px;
-  padding-top: 70px;
-  text-align: center;
-  background-color: #fff;
-  margin-bottom: 0;
-}
-
 .about-section h2 {
   font-size: 45px;
   margin-bottom: 20px;
@@ -154,96 +112,73 @@
   max-width: 600px;
   margin-top: 20px;
   border-radius: 10px;
-} */
+}
 
 /* ==========================================================================
   Mission Section Styles
    ========================================================================== */
-
+/* ==========================================================================
+  Mission Section Styles
+   ========================================================================== */
 .mission-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 60px 20px;
-  background-color: #f9f9f9;
-  text-align: center;
+  background: #f4f4f4; /* Light gray background as in the image */
+  padding: 40px 20px; /* Vertical and horizontal padding for spacing */
+  text-align: center; /* Center-align text */
+  position: relative; /* For positioning the blob */
 }
+
 .mission-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
-  color: #1c2236;
+  color: #00499f; /* Blue color for the header, matching the "OurVision" text */
+  font-size: 2.5em; /* Large header size */
+  margin-bottom: 20px; /* Space below the header */
+  font-weight: bold; /* Bold text for emphasis */
 }
 
-
-/* From Uiverse.io by dylanharriscameron */
-.card {
-  position: relative;
-  width: 500px;
-  height: 250px;
-  border-radius: 14px;
-  z-index: 1111;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-  ;
+.mission-section .bg {
+  max-width: 800px; /* Limit the width of the content for readability */
+  margin: 0 auto; /* Center the content */
+  padding: 20px; /* Inner padding for the text container */
+  background: #fff; /* White background for the text area */
+  border-radius: 10px; /* Slight rounding for a modern look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-.bg {
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 490px;
-  height: 240px;
-  z-index: 2;
-  background: rgba(255, 255, 255, .95);
-  backdrop-filter: blur(24px);
-  border-radius: 10px;
-  overflow: hidden;
-  outline: 2px solid white;
-  padding-top: 50px;
-}
-.bg p{
-  font-size: medium;
+.mission-section .bg p {
+  font-size: 1.1em; /* Readable text size */
+  color: #333; /* Dark gray text for contrast */
+  line-height: 1.6; /* Improved readability with line spacing */
+  margin-bottom: 15px; /* Space between paragraphs */
 }
 
-.blob {
-  position: absolute;
-  z-index: 1;
-  top: 50%;
+.mission-section .bg p:last-child {
+  margin-bottom: 0; /* Remove margin from the last paragraph */
+}
+
+.mission-section .blob {
+  position: absolute; /* Position the blob absolutely */
+  top: 0;
   left: 50%;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background-color: #3a2786;
-  opacity: 1;
-  filter: blur(12px);
-  animation: blob-bounce 5s infinite ease;
+  transform: translateX(-50%); /* Center the blob horizontally */
+  width: 200px; /* Adjust size to match the image's circular element */
+  height: 200px;
+  background: url('/assets/images/trendlinelogo.jpeg') no-repeat center; /* Replace with actual image path */
+  background-size: contain; /* Ensure the image fits within the blob */
+  z-index: -1; /* Place behind the content */
 }
 
-@keyframes blob-bounce {
-  0% {
-    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .mission-section h2 {
+    font-size: 2em; /* Reduce header size on small screens */
   }
 
-  25% {
-    transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+  .mission-section .bg {
+    padding: 15px; /* Reduce padding on small screens */
+    max-width: 100%; /* Full width on small screens */
   }
 
-  50% {
-    transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
-  }
-
-  75% {
-    transform: translate(-100%, -100%) translate3d(0, 100%, 0);
-  }
-
-  100% {
-    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  .mission-section .blob {
+    width: 150px; /* Smaller blob on small screens */
+    height: 150px;
   }
 }
-

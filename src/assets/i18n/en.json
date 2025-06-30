@@ -4,7 +4,7 @@
     "Logo-sub": "Line",
     "Home": "Home",
     "About": "About",
-    "ContactUs": "ContactUs",
+    "ContactUs": "Contact Us",
     "Services": "Services"
   },
   "Contact": {
@@ -49,6 +49,26 @@
     "SubTitleContact": "Contact Us",
     "SubTitleServices": "Our Services",
     "SubTitleAbout": "About Us"
+  },
+  "Home":{
+    "BrandName": "TrendLine",
+    "MainSecMainText": "Experts in the Field",
+    "MainSecMainText2": "of Digital Marketing",
+    "MainSecSubText": "We are a company specializing in social media account management. We offer integrated solutions that help brands appear professional, attractive, and effective.",
+    "MainSecButtonContact": "Contact Us",
+    "MainSecButtonRequest": "Request a Quote",
+    "OurMainSerSecTitle": "Our Main Services",
+    "Service1": "Content & Design Writing",
+    "Service2": "App & Web Development",
+    "Service3": "Account Management",
+    "WhyChooseUSSecTitle": "Why is Trendline your first choice as an advertising and publicity company?",
+    "WhyChooseUSReason1": "Specialized and creative team",
+    "WhyChooseUSReason2": "High quality at competitive prices",
+    "WhyChooseUSReason3": "Integrated services in one place",
+    "WhyChooseUSReason4": "Practical experience in managing successful accounts",
+    "PricingPlans": "Pricing Plans",
+    "PricingDesc": "Our affordable and flexible plans are launching soon!",
+    "PricingButton": "Coming Soon"
   }
 
 }

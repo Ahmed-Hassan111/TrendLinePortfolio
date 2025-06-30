@@ -5,15 +5,14 @@
   <section class="hero-section">
     <!-- Text Content (Left) -->
     <div class="hero-text">
-      <h1>Experts in the Field<br />of Digital Marketing</h1>
+      <h1>{{ "Home.MainSecMainText" | translate }}<br />{{ "Home.MainSecMainText2" | translate }}</h1>
       <p>
-        Digital marketing covers many areas such as social media, websites,
-        print and online advertising, TV, radio, and even exhibitions.<br />
-        <strong>"TrendLine"</strong>
+        {{ "Home.MainSecSubText" | translate }}<br />
+        <strong>"{{ "Home.BrandName" | translate }}"</strong>
       </p>
       <div class="hero-buttons">
         <button class="btn btn-primary" routerLink="/contact">
-          Contact Us
+          {{ "Home.MainSecButtonContact" | translate }}
         </button>
         <!-- <a
           href="https://wa.me/2001022624475?text=Hi%2C%20I%20would%20like%20to%20request%20a%20quote."
@@ -23,7 +22,7 @@
           class="btn btn-outline-primary"
           onclick="window.open('https://wa.me/2001022624475?text=Hi%2C%20I%20would%20like%20to%20request%20a%20quote.','_blank')"
         >
-          Request a Quote
+          {{ "Home.MainSecButtonRequest" | translate }}
         </button>
         <!-- </a> -->
       </div>
@@ -41,30 +40,33 @@
         rel="noopener noreferrer"
         ><button class="phone">
           <img
-            src="../assets/images/Mobile social column(2).png"
+            src="../assets/images/imagecom/Mobile social column(2)-min.png"
             alt="Digital Marketing Graphic"
           /></button
       ></a>
     </div>
     <!-- </section> -->
     <!-- closin main section -->
-    <button class="scroll-arrow" (click)="scrollArrowAction()">
+    <button class="scroll-arrow" (click)="scrollArrowAction()"  >
       <i [ngClass]="arrowUp ? 'fa fa-arrow-up' : 'fa fa-arrow-down'"></i>
     </button>
   </section>
+
+
+
   <!-- =========================
     Our Main Services Section
     ========================= -->
   <!-- Services Section -->
   <section class="services-section-en">
     <!-- Section Title -->
-    <h2 class="services-title-en">Our Main Services</h2>
+    <h2 class="services-title-en">{{ "Home.OurMainSerSecTitle" | translate }}</h2>
 
     <!-- Services Grid -->
     <div class="services-list-en">
       <!-- Single Card -->
       <div class="service-card-en">
-        <h3 class="card-title">Account Management</h3>
+        <h3 class="card-title">{{ "Home.Service1" | translate }}</h3>
         <a href="/services" class="card-img-link">
           <img
             src="assets/images/service1.jpg"
@@ -76,7 +78,7 @@
       </div>
 
       <div class="service-card-en">
-        <h3 class="card-title">App & Website Design</h3>
+        <h3 class="card-title">{{ "Home.Service2" | translate }}</h3>
         <a href="/services" class="card-img-link">
           <img
             src="assets/images/service2.jpg"
@@ -88,7 +90,7 @@
       </div>
 
       <div class="service-card-en">
-        <h3 class="card-title">Content & Design Writing</h3>
+        <h3 class="card-title">{{ "Home.Service3" | translate }}</h3>
         <a href="/services" class="card-img-link">
           <img
             src="assets/images/service3.jpg"
@@ -106,48 +108,35 @@
   <!-- =========================
      WHY CHOOSE US SECTION
      ========================= -->
-  <section class="why-choose-us-section">
-    <!-- Section Title -->
-    <h2 class="why-title">
-      Why is "TrendLine" your first choice as an advertising agency?
-    </h2>
-    <!-- Section Subtitle -->
-    <h3 class="why-subtitle">
-    </h3>
-    <!-- Feature Cards -->
-    <div class="why-cards">
-      <!-- Card 1: Precision in Execution -->
-      <div class="why-card">
-        <div class="why-icon"><i class="fa fa-briefcase"></i></div>
-        <h4>Precision in Execution</h4>
-        <p>
-          We perfect the small details before the big ones, so everything shines
-          in the end.
-        </p>
-      </div>
-      <!-- Card 2: Always With You (Highlighted) -->
-      <div class="why-card why-card-highlight">
-        <div class="why-icon"><i class="fa fa-users"></i></div>
-        <h4>We’re Always With You</h4>
-        <p>We’re happy to answer your questions anytime, anywhere.</p>
-      </div>
-      <!-- Card 3: WordPress Experts -->
-      <div class="why-card">
-        <div class="why-icon"><i class="fa fa-briefcase"></i></div>
-        <h4>WordPress Experts</h4>
-        <p>
-          Designing and managing WordPress sites with over 10 years of
-          experience.
-        </p>
-      </div>
+<!-- لماذا نحن؟ -->
+<section class="why-choose-us-section">
+  <h2 class="why-title">
+    {{ "Home.WhyChooseUSSecTitle" | translate }}
+  </h2>
+
+  <div class="why-reasons-container">
+    <div class="reason reason-top">
+      {{ "Home.WhyChooseUSReason1" | translate }}
     </div>
-  </section>
+    <div class="reason reason-right">
+      {{ "Home.WhyChooseUSReason2" | translate }}
+    </div>
+    <div class="reason reason-bottom">
+      {{ "Home.WhyChooseUSReason3" | translate }}
+    </div>
+    <div class="reason reason-left">
+      {{ "Home.WhyChooseUSReason4" | translate }}
+    </div>
+  </div>
+</section>
+
 
   <!-- =========================
      PRICING PLANS SECTION
      ========================= -->
+
   <!-- Pricing Plans Section -->
-  <section class="pricing-section">
+  <!-- <section class="pricing-section">
     <div class="pricing-container">
       <div class="pricing-content">
         <div class="pricing-intro">
@@ -195,7 +184,7 @@
         </div>
 
         <div class="package-cards">
-          <!-- Big Box 3 -->
+
           <div class="package-card active" id="box3-card">
             <div class="card-header">
               <h3>Premium Pack</h3>
@@ -236,7 +225,7 @@
             </button>
           </div>
 
-          <!-- Big Box 2 -->
+
           <div class="package-card active" id="box2-card">
             <div class="card-header">
               <h3>Starter Pack</h3>
@@ -278,7 +267,14 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
+<section class="pricing-soon-section">
+  <div class="pricing-content">
+    <h2>{{ "Home.PricingPlans" | translate }}</h2>
+    <p>{{ "Home.PricingDesc" | translate }}</p>
+    <div class="coming-badge">{{ "Home.PricingButton" | translate }}</div>
+  </div>
+</section>
 
   <!-- closin main section -->
 </section>

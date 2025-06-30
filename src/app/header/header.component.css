@@ -51,20 +51,54 @@ router-outlet + * {
 html[dir="rtl"] .navbar-logo {
   flex-direction: row-reverse;
 }
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
 .lang-switch button {
-  background: none;
-  border: none;
-  font-size: 1.3rem;
-  padding: 2px 8px;
+  background: #f7f9fc;
+  border: 1.5px solid #2152a2;
+  color: #2152a2;
+  font-size: 1.18rem;
+  font-family: inherit;
+  padding: 4px 16px;
   cursor: pointer;
   margin: 0 2px;
-  border-radius: 4px;
-  transition: background 0.2s;
+  border-radius: 20px;
+  font-weight: 700;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    border 0.2s,
+    box-shadow 0.2s;
+  outline: none;
+  box-shadow: 0 1px 4px rgba(33,82,162,0.06);
+  position: relative;
+}
+
+.lang-switch button.active,
+.lang-switch button[aria-current="true"] {
+  background: linear-gradient(90deg, #2152a2 60%, #6F04D9 100%);
+  color: #fff;
+  border-color: #6F04D9;
+  box-shadow: 0 2px 8px rgba(33,82,162,0.10);
 }
 
 .lang-switch button:hover,
 .lang-switch button:focus {
-  background: #f0f0f0;
+  background: #e9edfb;
+  color: #2152a2;
+  border-color: #6F04D9;
+}
+
+.lang-switch button.active:hover,
+.lang-switch button.active:focus,
+.lang-switch button[aria-current="true"]:hover,
+.lang-switch button[aria-current="true"]:focus {
+  background: linear-gradient(90deg, #2152a2 60%, #6F04D9 100%);
+  color: #fff;
 }
 .navbar-logo img {
   height: 38px;
@@ -74,7 +108,7 @@ html[dir="rtl"] .navbar-logo {
 .brand-main {
   font-size: 2rem;
   font-weight: bold;
-  color: #2152a2;
+  color: #00356B;
   letter-spacing: 1px;
 }
 

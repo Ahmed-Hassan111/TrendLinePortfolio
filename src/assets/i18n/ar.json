@@ -49,5 +49,25 @@
     "SubTitleContact": "تواصل معنا",
     "SubTitleServices": "خدماتنا",
     "SubTitleAbout": "من نحن"
+  },
+  "Home": {
+    "BrandName": "تريند لاين",
+    "MainSecMainText": "خبراء في مجال",
+    "MainSecMainText2": "التسويق الرقمي",
+    "MainSecSubText": "نحن شركة متخصصة في إدارة حسابات وسائل التواصل الاجتماعي. نقدم حلولاً متكاملة تساعد العلامات التجارية على الظهور بشكل احترافي وجذاب وفعّال.",
+    "MainSecButtonContact": "تواصل معنا",
+    "MainSecButtonRequest": "طلب عرض سعر",
+    "OurMainSerSecTitle": "خدماتنا الرئيسية",
+    "Service1": "إدارة الحسابات",
+    "Service2": "تصميم وتطوير المواقع والتطبيقات",
+    "Service3": "كتابة المحتوى والتصميم",
+     "WhyChooseUSSecTitle": " لماذا تريندلاين هو خيارك الأول كشركة دعاية وإعلان؟ ",
+     "WhyChooseUSReason1": "فريق متخصص ومبدع",
+      "WhyChooseUSReason2": "جودة عالية بأسعار تنافسية",
+      "WhyChooseUSReason3": "خدمات متكاملة في مكان واحد",
+      "WhyChooseUSReason4": "خبرة عملية في إدارة حسابات ناجحة",
+      "PricingPlans": "خطط الأسعار",
+      "PricingDesc": "سيتم إطلاق خططنا المرنة وبأسعار معقولة قريبًا!",
+      "PricingButton": "قريبًا"
   }
 }
