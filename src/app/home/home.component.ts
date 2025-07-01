@@ -2,17 +2,40 @@ import { Component, AfterViewInit, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-
+import { trigger, state, style, animate, transition } from '@angular/animations';
+import { OnInit } from '@angular/core';
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [CommonModule, RouterLink,TranslateModule],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
+  animations: [
+    trigger('fadeIn', [
+      state('void', style({ opacity: 0, transform: 'translateY(20px)' })),
+      state('*', style({ opacity: 1, transform: 'translateY(0)' })),
+      transition('void => *', animate('0.5s ease-out')),
+    ]),
+  ],
 })
-export class HomeComponent{
+export class HomeComponent implements OnInit,AfterViewInit{
   arrowUp = false;
+  state = 'active'; // Trigger animation on load
+  reasons = [
+    { text: 'Home.WhyChooseUSReason1' },
+    { text: 'Home.WhyChooseUSReason2' },
+    { text: 'Home.WhyChooseUSReason3' },
+    { text: 'Home.WhyChooseUSReason4' },
+  ];
 
+  ngOnInit() {
+    // Animation trigger can be managed here if needed
+  }
+  ngAfterViewInit() {
+    setTimeout(() => {
+      this.state = '*'; // Triggers animation
+    }, 100); // Small delay to allow DOM render
+  }
   @HostListener('window:scroll', [])
   onWindowScroll() {
     // إذا كنت في الأسفل أظهر سهم للأعلى، إذا كنت في الأعلى أظهر سهم للأسفل
@@ -26,54 +49,6 @@ export class HomeComponent{
       window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
     }
   }
-
-  // ngAfterViewInit(): void {
-  //   const tabs = document.querySelectorAll('.tab');
-  //   const cards = document.querySelectorAll('.package-card');
-
-    // Initialize first tab as active
-    // if (tabs.length > 0 && cards.length > 0) {
-    //   tabs[0].classList.add('active');
-    //   cards[0].classList.add('active');
-    // }
-
-    // tabs.forEach((tab) => {
-    //   tab.addEventListener('click', () => {
-    //     // Remove active class from all tabs and cards
-    //     tabs.forEach((t) => t.classList.remove('active'));
-    //     cards.forEach((c) => c.classList.remove('active'));
-
-    //     // Add active class to clicked tab
-    //     const tabId = (tab as HTMLElement).getAttribute('data-tab');
-    //     tab.classList.add('active');
-
-    //     if (tabId) {
-    //       const card = document.getElementById(`${tabId}-card`);
-    //       if (card) {
-    //         card.classList.add('active');
-    //       }
-    //     }
-    //   });
-    // });
-
-    // Hover effect
-    // cards.forEach((card) => {
-    //   const cardEl = card as HTMLElement;
-
-    //   cardEl.addEventListener('mouseenter', () => {
-    //     if (cardEl.classList.contains('active')) {
-    //       cardEl.style.transform = 'translateY(-5px)';
-    //       cardEl.style.boxShadow = '0 15px 35px rgba(0,0,0,0.15)';
-    //     }
-    //   });
-
-    //   cardEl.addEventListener('mouseleave', () => {
-    //     if (cardEl.classList.contains('active')) {
-    //       cardEl.style.transform = 'translateY(0)';
-    //       cardEl.style.boxShadow = '0 10px 30px rgba(0,0,0,0.1)';
-    //     }
-    //   });
-    // });
   }
 
 

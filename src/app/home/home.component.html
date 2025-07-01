@@ -6,10 +6,10 @@
     <!-- Text Content (Left) -->
     <div class="hero-text">
       <h1>{{ "Home.MainSecMainText" | translate }}<br />{{ "Home.MainSecMainText2" | translate }}</h1>
-      <p>
+      <!-- <p>
         {{ "Home.MainSecSubText" | translate }}<br />
         <strong>"{{ "Home.BrandName" | translate }}"</strong>
-      </p>
+      </p> -->
       <div class="hero-buttons">
         <button class="btn btn-primary" routerLink="/contact">
           {{ "Home.MainSecButtonContact" | translate }}
@@ -32,15 +32,16 @@
     <!-- <div class="hero-image">
       <img src="assets/images/logo.gif" alt="Digital Marketing Graphic" />
     </div> -->
+
     <div class="hero-image">
       <!--link whatsapp-->
       <a
-        href="https://www.linkedin.com/company/paymobcompany/ "
+        href="https://www.instagram.com/1_trendline?igsh=MXN1Ym5vbDZsZXdlNg=="
         target="_blank"
         rel="noopener noreferrer"
         ><button class="phone">
           <img
-            src="../assets/images/imagecom/Mobile social column(2)-min.png"
+            src="../assets/images/white-Mobile.png"
             alt="Digital Marketing Graphic"
           /></button
       ></a>
@@ -58,52 +59,61 @@
     Our Main Services Section
     ========================= -->
   <!-- Services Section -->
-  <section class="services-section-en">
-    <!-- Section Title -->
-    <h2 class="services-title-en">{{ "Home.OurMainSerSecTitle" | translate }}</h2>
+ <section class="services-section-en">
+  <!-- Section Title -->
+  <h2 class="services-title-en">{{ "Home.OurMainSerSecTitle" | translate }}</h2>
 
-    <!-- Services Grid -->
-    <div class="services-list-en">
-      <!-- Single Card -->
-      <div class="service-card-en">
+  <!-- Services Grid -->
+  <div class="services-list-en">
+    <!-- First Card (Image on Left) -->
+    <div class="service-card-en">
+      <a href="/services" class="card-img-link">
+        <img
+          src="../assets/images/design3.svg"
+          alt="Social Media Service"
+          class="card-img"
+          loading="eager"
+        />
+      </a>
+      <div class="text-our-service">
         <h3 class="card-title">{{ "Home.Service1" | translate }}</h3>
-        <a href="/services" class="card-img-link">
-          <img
-            src="assets/images/service1.jpg"
-            alt="Service 1"
-            class="card-img"
-            loading="eager"
-          />
-        </a>
+        <p>Social media expertise to boost your online presence with engaging content.</p>
       </div>
-
-      <div class="service-card-en">
-        <h3 class="card-title">{{ "Home.Service2" | translate }}</h3>
-        <a href="/services" class="card-img-link">
-          <img
-            src="assets/images/service2.jpg"
-            alt="Service 2"
-            class="card-img"
-            loading="eager"
-          />
-        </a>
-      </div>
-
-      <div class="service-card-en">
-        <h3 class="card-title">{{ "Home.Service3" | translate }}</h3>
-        <a href="/services" class="card-img-link">
-          <img
-            src="assets/images/service3.jpg"
-            alt="Service 3"
-            class="card-img"
-            loading="eager"
-          />
-        </a>
-      </div>
-
-      <!-- Add more service cards by duplicating one block -->
     </div>
-  </section>
+
+    <!-- Second Card (Image on Right) -->
+    <div class="service-card-en image-right">
+      <div class="text-our-service">
+        <h3 class="card-title">{{ "Home.Service2" | translate }}</h3>
+        <p>Interactive learning tools to make education fun and effective.</p>
+      </div>
+      <a href="/services" class="card-img-link">
+        <img
+          src="../assets/images/web3.svg"
+          alt="Service 2"
+          class="card-img"
+          loading="eager"
+        />
+      </a>
+    </div>
+
+    <!-- Third Card (Image on Left) -->
+    <div class="service-card-en last">
+      <a href="/services" class="card-img-link">
+        <img
+          src="../assets/images/account.svg"
+          alt="Service 3"
+          class="card-img"
+          loading="eager"
+        />
+      </a>
+      <div class="text-our-service">
+        <h3 class="card-title">{{ "Home.Service3" | translate }}</h3>
+        <p>Custom solutions to enhance your business growth and efficiency.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- =========================
      WHY CHOOSE US SECTION
@@ -115,17 +125,17 @@
   </h2>
 
   <div class="why-reasons-container">
-    <div class="reason reason-top">
-      {{ "Home.WhyChooseUSReason1" | translate }}
+    <div class="reason-card reason-top" [@fadeIn]="state">
+      <p class="reason-text">{{ reasons[0].text | translate }}</p>
     </div>
-    <div class="reason reason-right">
-      {{ "Home.WhyChooseUSReason2" | translate }}
+    <div class="reason-card reason-right" [@fadeIn]="state">
+      <p class="reason-text">{{ reasons[1].text | translate }}</p>
     </div>
-    <div class="reason reason-bottom">
-      {{ "Home.WhyChooseUSReason3" | translate }}
+    <div class="reason-card reason-bottom" [@fadeIn]="state">
+      <p class="reason-text">{{ reasons[2].text | translate }}</p>
     </div>
-    <div class="reason reason-left">
-      {{ "Home.WhyChooseUSReason4" | translate }}
+    <div class="reason-card reason-left" [@fadeIn]="state">
+      <p class="reason-text">{{ reasons[3].text | translate }}</p>
     </div>
   </div>
 </section>
@@ -272,9 +282,14 @@
   <div class="pricing-content">
     <h2>{{ "Home.PricingPlans" | translate }}</h2>
     <p>{{ "Home.PricingDesc" | translate }}</p>
-    <div class="coming-badge">{{ "Home.PricingButton" | translate }}</div>
+    <!-- <div class="coming-badge">{{ "Home.PricingButton" | translate }}</div> -->
   </div>
-</section>
+        <button
+          class="coming-badge"
+          onclick="window.open('https://wa.me/2001022624475?text=Hi%2C%20I%20would%20like%20to%20request%20a%20quote.','_blank')"
+        >
+          {{ "Home.PricingButton" | translate }}
+        </button></section>
 
   <!-- closin main section -->
 </section>
