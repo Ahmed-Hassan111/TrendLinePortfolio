@@ -210,6 +210,19 @@ body .lang-ar .services-section-en{
   text-align: right;
   margin: 0 10px;
 }
+.image-right{
+  height: 500px;
+}
+.last{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 20px; */
+  border-radius: 20px;
+  width: 100%;
+  height: 600px;
+}
 
 .last img{
   width: 100%;
@@ -257,7 +270,6 @@ body .lang-ar .services-section-en{
   /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); */
   width: 100%;
 }
-/*  linear-gradient(to right, #251C50, #371A50) */
 .why-title {
   font-size: 2em;
   color: #251C50; /* Dark blue title */
@@ -316,21 +328,20 @@ font-weight: 600;
 }
 
 @media (max-width: 600px) {
-  .why-choose-us-section {
+ .why-choose-us-section {
     padding: 20px;
   }
+
   .why-title {
     font-size: 1.5em;
   }
-  .why-reasons-container {
-    grid-template-columns: 1fr;
-    gap: 15px;
+
+  .reason-text {
+    font-size: 1rem;
   }
-  .reason-card {
-    margin-bottom: 15px;
-  }
-  .reason-card:last-child {
-    margin-bottom: 0;
+
+  .reason-text:hover {
+    font-size: 1.1rem;
   }
 }
 
@@ -399,6 +410,40 @@ font-weight: 600;
     font-size: 1.1rem;
     padding: 12px 24px;
   }
+  .services-list-en{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+    .service-card-en {
+    gap: 40px;
+    text-align: center;
+  }
+
+  .card-img-link,
+  .text-our-service {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+.service-card-en:nth-child(2) {
+    margin-bottom: 10px;
+  }
+  .image-right .card-img-link {
+    padding-top: 100px;
+    text-align: center;
+    width: 100%;
+  }
+  .last {
+    width: 100%;
+    text-align: center;
+    height: 400px;
+    }
+  .services-title-en {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+  }
 }
 
 /* Mobile */
@@ -420,6 +465,28 @@ font-weight: 600;
     font-size: 1rem;
     padding: 10px 20px;
   }
+.services-title-en {
+    font-size: clamp(2rem, 6vw, 3rem);
+    margin-bottom: 3rem;
+  }
+
+  .card-title {
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+  }
+
+  .text-our-service {
+    font-size: 0.95rem;
+  }
+
+  .service-card-en {
+    padding: 10px;
+    gap: 20px;
+  }
+ .last {
+    width: 100%;
+    text-align: center;
+    height: 300px;
+    }
 }
 
 /* Small Mobile */
@@ -432,4 +499,29 @@ font-weight: 600;
     font-size: 0.95rem;
     padding: 8px 18px;
   }
+  .image-right{
+    height: 300px;
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   All sections media queries
+   ========================= */
+
+
