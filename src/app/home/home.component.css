@@ -1,7 +1,6 @@
 /* Main Section */
 .main {
-  background: linear-gradient(to top, #ecf1f6, #E6E6FA, #ffffff);
-
+  background: linear-gradient(to top, #ecf1f6, #e6e6fa, #ffffff);
 }
 
 /* fisrt Main Section */
@@ -18,21 +17,20 @@
 .hero-text {
   flex: 1 1 50%;
   max-width: 600px;
-  color: #251C50;
+  color: #251c50;
 }
 .hero-text h1 {
   font-size: 3rem;
   margin-bottom: 50px;
   font-weight: bold;
   line-height: 1.2;
-  font-family: 'dancing script', cursive;
-  color:linear-gradient(to right, #251C50, #371A50);
+  font-family: "dancing script", cursive;
+  color: linear-gradient(to right, #251c50, #371a50);
 }
-
 
 .hero-text p {
   font-size: 1.4rem;
-  color: #251C50;
+  color: #251c50;
   margin-bottom: 32px;
   line-height: 2;
 }
@@ -59,9 +57,22 @@
   transform: rotate3d(1, 0.3, 0, 15deg);
   transform-style: preserve-3d;
   transition: transform 0.2s ease-out;
+  transform-style: preserve-3d;
+  transition: transform 1.5s ease-in-out;
+  animation: flip360 4s infinite linear;
+}
+@keyframes flip360 {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
 }
 .hero-image img:hover {
   transform: rotate3d(1, 0.3, 0, 20deg);
+  transform: rotateY(360deg);
+  transition: transform 1.5s ease-in-out;
 }
 .phone {
   border-style: none;
@@ -132,7 +143,7 @@
   height: 48px;
   border: none;
   border-radius: 50%;
-  background: #371A50;
+  background: #371a50;
   color: #fff;
   font-size: 1.7rem;
   box-shadow: 0 2px 8px rgba(44, 62, 80, 0.12);
@@ -144,23 +155,22 @@
   transition: background 0.2s;
 }
 .scroll-arrow:hover {
-  background: #C484FF;
+  background: #c484ff;
 }
 /* =========================
    Our Main Services Section
    ========================= */
 /* Container for the whole section */
-.services-section-en{
+.services-section-en {
   direction: ltr;
   text-align: left;
 }
-body .lang-ar .services-section-en{
-  direction: rtl!important ;
+body .lang-ar .services-section-en {
+  direction: rtl !important ;
   text-align: right;
-
 }
 
-.services-title-en{
+.services-title-en {
   padding-top: 4rem;
   font-size: 2.5rem;
   color: #fff;
@@ -168,7 +178,7 @@ body .lang-ar .services-section-en{
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 900;
-  font-size:  clamp(3rem, 5vw, 5rem);
+  font-size: clamp(3rem, 5vw, 5rem);
   font-family: poppins, sans-serif;
 }
 
@@ -177,7 +187,7 @@ body .lang-ar .services-section-en{
   padding: 0 5vw;
   text-align: center;
   width: 100%;
-  background: linear-gradient(to right, #251C50, #371A50);
+  background: linear-gradient(to right, #251c50, #371a50);
   animation: fadeIn 1s ease;
 }
 
@@ -205,15 +215,15 @@ body .lang-ar .services-section-en{
   gap: 200px; /* Space between image and text */
   width: 100%; /* Ensure the card takes full width */
 }
-.image-right .card-img-link{
+.image-right .card-img-link {
   width: 65%;
   text-align: right;
   margin: 0 10px;
 }
-.image-right{
+.image-right {
   height: 500px;
 }
-.last{
+.last {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -224,20 +234,20 @@ body .lang-ar .services-section-en{
   height: 600px;
 }
 
-.last img{
+.last img {
   width: 100%;
   height: 700px;
 }
 .text-our-service {
   width: 50%;
   text-align: right;
-    color: #cfc9c9;
-    /* margin: 0 100px; */
+  color: #cfc9c9;
+  /* margin: 0 100px; */
 }
-.last .card-img-link{
+.last .card-img-link {
   height: 600px;
 }
-.card-title{
+.card-title {
   font-size: clamp(3rem, 3vw, 4rem);
   color: #fff;
   font-weight: 700;
@@ -261,7 +271,7 @@ body .lang-ar .services-section-en{
    WHY CHOOSE US SECTION
    ========================= */
 .why-choose-us-section {
-  background:transparent; /* Light blue-gray background */
+  background: transparent; /* Light blue-gray background */
   padding: 40px 20px;
   text-align: center;
   /* border-radius: 15px; */
@@ -272,7 +282,7 @@ body .lang-ar .services-section-en{
 }
 .why-title {
   font-size: 2em;
-  color: #251C50; /* Dark blue title */
+  color: #251c50; /* Dark blue title */
   margin-bottom: 30px;
   font-weight: 600;
 }
@@ -285,7 +295,7 @@ body .lang-ar .services-section-en{
 }
 
 .reason-card {
-  background:  linear-gradient(to right, #251C50, #371A50);
+  background: linear-gradient(to right, #251c50, #371a50);
   color: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -306,8 +316,8 @@ body .lang-ar .services-section-en{
   margin: 0;
 }
 .reason-text:hover {
-font-size: 21px;
-font-weight: 600;
+  font-size: 21px;
+  font-weight: 600;
   transition: font-size 0.3s ease;
 }
 .reason-top {
@@ -328,7 +338,7 @@ font-weight: 600;
 }
 
 @media (max-width: 600px) {
- .why-choose-us-section {
+  .why-choose-us-section {
     padding: 20px;
   }
 
@@ -351,7 +361,7 @@ font-weight: 600;
 /* Section container */
 /* Pricing Plan Coming Soon Section */
 .pricing-soon-section {
-  background:  linear-gradient(to right, #251C50, #371A50);;
+  background: linear-gradient(to right, #251c50, #371a50);
   color: #ffffff;
   text-align: center;
   padding: 100px 20px;
@@ -391,9 +401,18 @@ font-weight: 600;
 
 /* Animation */
 @keyframes pulse {
-  0% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.1); opacity: 0.85; }
-  100% { transform: scale(1); opacity: 1; }
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.85;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /* Tablet */
@@ -410,14 +429,14 @@ font-weight: 600;
     font-size: 1.1rem;
     padding: 12px 24px;
   }
-  .services-list-en{
+  .services-list-en {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
   }
-    .service-card-en {
+  .service-card-en {
     gap: 40px;
     text-align: center;
   }
@@ -428,7 +447,7 @@ font-weight: 600;
     text-align: center;
     margin: 0 auto;
   }
-.service-card-en:nth-child(2) {
+  .service-card-en:nth-child(2) {
     margin-bottom: 10px;
   }
   .image-right .card-img-link {
@@ -440,7 +459,7 @@ font-weight: 600;
     width: 100%;
     text-align: center;
     height: 400px;
-    }
+  }
   .services-title-en {
     font-size: clamp(2.5rem, 5vw, 4rem);
   }
@@ -465,7 +484,7 @@ font-weight: 600;
     font-size: 1rem;
     padding: 10px 20px;
   }
-.services-title-en {
+  .services-title-en {
     font-size: clamp(2rem, 6vw, 3rem);
     margin-bottom: 3rem;
   }
@@ -482,11 +501,11 @@ font-weight: 600;
     padding: 10px;
     gap: 20px;
   }
- .last {
+  .last {
     width: 100%;
     text-align: center;
     height: 300px;
-    }
+  }
 }
 
 /* Small Mobile */
@@ -499,29 +518,11 @@ font-weight: 600;
     font-size: 0.95rem;
     padding: 8px 18px;
   }
-  .image-right{
+  .image-right {
     height: 300px;
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* =========================
    All sections media queries
    ========================= */
-
-

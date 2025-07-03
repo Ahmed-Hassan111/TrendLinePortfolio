@@ -10,11 +10,11 @@
   "Contact": {
     "Title": "Contact Us",
     "Phone": "Phone",
-    "PhoneValue": "01022624475",
+    "PhoneValue": "+968 77463736",
     "Email": "Email",
-    "EmailValue": "name@gmail.com",
+    "EmailValue": "Trendline.om@gmail.com",
     "Address": "Address",
-    "Country": "Omman, Muscat"
+    "Country": "Oman - Muscat - Al mabelah - Al bnok street"
   },
   "About": {
     "Title": "About Us",
@@ -22,9 +22,9 @@
     "Description2": " Our goal is to be the primary creative partner for your success in the digital world. ",
     "Description3": " Digital excellence starts with the details ",
     "OurVision": "OurVision",
-    "OurVisionDesc1" : "To be the pioneers in providing content management services.",
+    "OurVisionDesc1": "To be the pioneers in providing content management services.",
     "OurVisionDesc2": "Digitally, with high professionalism and renewed creativity, we make a difference.",
-    "OurVisionDesc3" : "Tangible in the presence of our digital customers."
+    "OurVisionDesc3": "Tangible in the presence of our digital customers."
   },
   "Services": {
     "Title": "Our Services",
@@ -44,13 +44,15 @@
   "Footer": {
     "Title1": "Contact Numbers",
     "Title2": "Address",
+    "Title2Value": "Oman - Muscat - Al mabelah - Al bnok street",
     "Title3": "Emails",
+    "Title3Value": "Click to send mail",
     "SubTitle": "TrendLine All rights reserved 2025",
     "SubTitleContact": "Contact Us",
     "SubTitleServices": "Our Services",
     "SubTitleAbout": "About Us"
   },
-  "Home":{
+  "Home": {
     "BrandName": "TrendLine",
     "MainSecMainText": "Experts in the Field",
     "MainSecMainText2": "of Digital Marketing",
@@ -70,5 +72,4 @@
     "PricingDesc": "Our affordable and flexible plans are launching soon!",
     "PricingButton": "Coming Soon"
   }
-
 }
